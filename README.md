@@ -53,6 +53,7 @@
 - **Add book**
 - **Remove book**
 - **Display books**
+- **Contact info**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +96,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/alex1779/awesome-books.git
+  git clone https://github.com/alex1779/awesome-books2.git
 ```
 
 -
@@ -185,8 +186,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Contact Information
-- Navigation bar
+- Add a section to categorize the books.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
