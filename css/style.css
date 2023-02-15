@@ -7,8 +7,60 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-/* MAIN SECTION */
+nav {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid black;
+  margin: auto;
+  margin-top: 5px;
+}
 
+nav > span {
+  margin: 1vw 0 1vw 5vw;
+  font-weight: bold;
+}
+
+/* NAVBAR */
+.menu-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu-links > li:nth-child(-n + 2) {
+  border-right: 3px solid black;
+}
+
+.menu-links > li > a {
+  margin-right: 1vw;
+  margin-left: 1vw;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-links > li > a:hover {
+  color: cornflowerblue;
+}
+
+.active {
+  color: cornflowerblue !important;
+}
+
+.date {
+  text-align: end;
+  margin-right: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+  font-weight: bold;
+}
+
+/* MAIN SECTION */
 .main-section {
   display: flex;
   flex-direction: column;
@@ -17,20 +69,19 @@ body {
 }
 
 /* TITLE */
-
 .title {
   margin-top: 10px;
   text-align: center;
 }
 
 /* BOOK LIST SECTION */
-
 .book-list {
-  width: 50%;
+  width: 90%;
   min-width: 350px;
   border: 3px solid black;
-  margin: 20px 10px;
   padding: 0;
+  margin: auto;
+  margin-bottom: 25%;
 }
 
 table {
@@ -63,7 +114,6 @@ tr:nth-child(odd) {
 }
 
 /* LINE SEPARATOR */
-
 .separator {
   width: 150px;
   background-color: black;
@@ -71,11 +121,11 @@ tr:nth-child(odd) {
 }
 
 /* ADD BOOK SECTION */
-
 .add-book {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+  margin-bottom: 13.5%;
 }
 
 #form {
@@ -122,7 +172,55 @@ input {
 }
 
 /* Empty Library */
-
 .empty-libray {
   margin-left: 10px;
+}
+
+/*  CONTACT INFORMATION */
+#contact-title {
+  font-size: 2.3vw;
+  margin-bottom: 4vw;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+#contact > p {
+  font-size: 1.3vw;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 3vw;
+}
+
+#contact > ul {
+  padding-left: 5vw;
+  margin-bottom: 25%;
+}
+
+#contact > ul > li {
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.footer-content {
+  width: 90%;
+  min-width: 350px;
+  border: 3px solid black;
+  padding: 1vw 0 1vw 2vw;
+  margin: auto;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.hide-section {
+  display: none;
+}
+
+.show-section {
+  display: flex;
 }
